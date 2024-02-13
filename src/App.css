@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+.bgContainer{
+  height: 100vh;
+  width:100%;
+  padding: 0px;
+  margin: 0px;
+  overflow-y: auto;
+}
+*{
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.margin{
+  margin-top: 80px;
+}
+@media screen and (max-width:1024px) and (min-width:426px){
+
+  .margin{
+      margin-top: 200px;
+  }
+
+
+}

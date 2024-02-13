@@ -1,0 +1,63 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+}
+.contact-us{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faqsList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 10px;
+    justify-content: space-around;
+    color: rgb(130, 130, 130);
+}
+.faqItems:hover{
+    color: rgb(0, 0, 0);
+    zoom: 1.03;
+    transition: zoom ease-in-out 0.3;
+}
+.faqs{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+
+}
+.privacy-policy{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    border-bottom: solid 3px #fa5757;
+    border-left: solid 3px #fa5757;
+    padding: 15px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-align: justify;
+  
+}
+.faqs h3{
+    display: block;
+    width: 94%;
+}
+.borders{
+    border-top: solid 3px #fa5757;
+    border-right: solid 3px #fa5757;
+    width: 75%;
+    padding: 20px;
+}
+.AboutContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}

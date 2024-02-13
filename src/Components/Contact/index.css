@@ -1,0 +1,14 @@
+.contactRowContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.map{
+    width: 70%;
+    height: auto;
+}
+
+@media screen and (max-width:426px){
+
+}

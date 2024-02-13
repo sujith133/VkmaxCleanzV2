@@ -1,0 +1,218 @@
+.categoryContainer{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: solid 2px;
+    border-color: rgb(237, 237, 237);
+    border-radius: 15px;
+    background-color: #fff;
+    margin-left: 15px;
+    justify-content: center;
+    margin: 15px;
+    padding: 50px;
+}
+
+.heading3{
+    width: 100%;
+    margin: 10px;
+}
+.categoryButtons{
+    width: 100px;
+    height: 60px;
+    margin: 30px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.categoryButtons:hover{
+    scale: 1.25;
+
+}
+.categoryBlog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: auto;
+    
+}
+.introduction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    margin-top: 100px;
+
+}
+.ratingContainer{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: center;
+}
+
+.imagesContainer{
+    height: 50vh;
+    width: 40%;
+    border: solid 1px #FEF5E7;
+    border-radius: 15px;
+    background-color: #FDEBD0;
+    justify-content: center;
+    margin: 15px;
+
+}
+.slickbox{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    color: #fff;
+}
+.imgSlider{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.ratingIcon{
+    font-size: 34px;
+}
+.rowContainer{
+    display: flex;
+    flex-direction: row;
+    
+}
+.ratingBox{
+    width: 30%;
+    justify-content: space-around;
+}
+.columnContainer{
+    display: flex;
+    flex-direction: column;
+}
+.titleImg{
+    width: 45%;
+    height: auto;
+    margin: 10px;
+    border-radius: 15px;
+}
+.trigger-button {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    color: white;
+    padding: 8px 15px 8px 15px;
+    margin: 8px;
+    background-color: #7c69e9;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+   }
+.popuContainer{
+    height: 80vh;
+    width: 50vw;
+    overflow-y: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 10000;
+}
+.categoryTitle{
+    font-size: 13px;
+}
+.subLayerItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 80px;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgb(237, 237, 237);
+}
+.subImage{
+    height: auto;
+    width: auto;
+}
+.stars{
+    color: gold;
+    font-size: 18px;
+}
+.starRating{
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width:426px){
+    .titleImg{
+        display:none;
+    }
+    .categoryBlog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        height: auto;
+    }
+    .categoryContainer{
+        height: 100%;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: solid 2px;
+        border-color: rgb(237, 237, 237);
+        border-radius: 15px;
+        background-color: #fff;
+        margin-left: 15px;
+        justify-content: center;
+        margin: 5px;
+        
+        padding: 0%;
+        padding-bottom: 40px;
+    }
+
+}
+@media screen and (max-width:426px){
+    .ratingContainer{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width:768px) and (min-width:426px){
+    .titleImg{
+        display:none;
+    }
+    .categoryBlog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+    }
+    .categoryContainer{
+        height: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: solid 2px;
+        border-color: rgb(237, 237, 237);
+        border-radius: 15px;
+        background-color: #fff;
+        margin-left: 15px;
+        justify-content: center;
+        margin: 15px;
+        padding: 50px;
+    }
+
+}
