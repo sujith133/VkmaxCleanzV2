@@ -1,39 +1,72 @@
-.sliderItem{
-    height: auto;
-    width: auto;
-    
-
+.sliderItemer{
+    height: 420px;
+    width: 350px !important;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 4px solid rgb(237,237,237);
+    border-left: 2px solid rgb(237,237,237);
+    border-right: 2px solid rgb(237,237,237);
+    margin: auto;
+    scale: 0.9;
+    position: relative;
+    transition: scale 0.5s ease-in-out;
 }
-.sliderItem:focus{
+.sliderItemer h3{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.sliderItemer:focus{
     outline: none;
-
+ 
 }
 .sliderImage{
-    border-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+    height: 250px;
     
 }
-.sliderItem:hover{
-    height: auto;
-    width: auto;
+.sliderItemer:hover{
+    scale: 1;
     z-index: 1000;
+    transition: scale 0.5s ease-in-out;
     
+}
 
-}
-.sliderImage:hover{
-    scale:1.025;
-   
-}
 .slideContainer{
     margin-top: 50px;
-    width: 95%;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     text-align: center;
-    padding-left: 100px;
     padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+.exploreButton{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid mediumorchid;
+    background-color: white;
+    color: mediumorchid;
+    font-size: 12px;
+
+}
+.exploreButton:hover{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: mediumorchid;
+    color: white;
+    font-size: 12px;
 }
 
 
-
-@media screen and (max-width:426px) and (min-width:376px){
+@media screen and (max-width:724px) and (min-width:376px){
     .slideContainer{
         margin-top: 50px;
         width: 100%;
@@ -43,7 +76,7 @@
 }
 @media screen and (max-width:400px){
 
-    .sliderItem{
+    .sliderItemer{
         zoom:0.75;
     }
     .slideContainer{
@@ -54,8 +87,8 @@
         padding-bottom: 20px;
     }
 }
-@media screen and (max-width:768px) and (min-width:426px){
-    .sliderItem{
+@media screen and (max-width:768px) and (min-width:725px){
+    .sliderItemer{
         zoom: 0.9;
     }   
     .slideContainer{
@@ -63,5 +96,10 @@
         width: 100%;
         text-align: center;
         padding-left: 15px;
+    }
+}
+@media screen and (max-width:559px){
+    .slick-dots li{
+        margin: 0px !important;
     }
 }

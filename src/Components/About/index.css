@@ -5,10 +5,83 @@
     flex-direction: row;
     margin-top: 70px;
 }
+.founderContainer{
+    justify-content: space-around;
+    padding: 25px;
+}
+.aboutLog{
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+}
+.aboutmission{
+    padding: 30px;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    margin: 15px;
+    zoom: 0.8;
+}
+.wrapper{
+    flex-wrap: wrap;
+}
+.justifier{
+    justify-content: space-around !important;
+}
+.chooseImg{
+    height: 125px;
+    width: auto;
+    margin: 10px;
+}
+.chooseContainer{
+    width: 300px;
+    margin: 15px;
+    border-bottom: 3px solid rgb(237,237,237);
+    border-left: 2px solid rgb(237,237,237);
+    border-right: 2px solid rgb(237,237,237);
+    border-top: 1px solid rgb(237,237,237);
+    border-radius: 15px;
+    padding: 15px;
+    padding-top: 40px;
+    transition: scale 0.3s ease-in-out;
+}
+.aboutRowContainer{
+    display: flex;
+    flex-direction: row;
+}
+.chooseContainer:hover{
+    scale: 1.05;
+    transition: scale 0.3s ease-in-out;
+}
+.aboutmission:hover{
+    padding: 30px;
+    
+    border-left: none;
+    border-right: none;
+    margin: 15px;
+    scale: 1.1;
+    transition: scale 0.5s ease-in-out;
+}
+.aboutmission img{
+    scale: 0.8;
+    height: 250px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    transition: scale 0.5s ease-in-out;
+}
+.padder{
+    padding-right: 50px;
+}
+.imageBlog{
+    width: 50%;
+    text-align: justify;
+
+}
 .contact-us{
     margin-top: 70px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
 }
 
@@ -26,6 +99,11 @@
     zoom: 1.03;
     transition: zoom ease-in-out 0.3;
 }
+.founderImage{
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+}
 .faqs{
   width: 80%;
   display: flex;
@@ -38,8 +116,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;  
-    border-bottom: solid 3px #fa5757;
-    border-left: solid 3px #fa5757;
+
     padding: 15px;
     font-size: 12px;
     margin-bottom: 15px;
@@ -56,8 +133,96 @@
     width: 75%;
     padding: 20px;
 }
+
 .AboutContainer{
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    justify-content: space-between;
+}
+/* AboutContainer.css */
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.leftBorder{
+    height: 60vh;
+    margin-left: 25px;
+    text-align: justify;
+    border-left: 3px solid rgb(237,237,237);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.hovering:hover .leftBorder{
+    
+    margin-left: 25px;
+    border-left: 3px solid red;
+}
+.about-item {
+    max-width: 90%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-description {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Add media queries for responsiveness if needed */
+@media screen and (max-width:1000px){
+    .aboutRowContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutLog{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .leftBorder{
+        display: block;
+        border-left: none;
+        border-top: 3px solid rgb(237,237,237);
+        margin-top: 15px;
+    }
+    .hovering:hover .leftBorder{
+    
+        margin-left: 0px;
+        border-left: none;
+        border-top: 3px solid red;
+    }
+    .imageBlog{
+        width: 90%;
+        text-align: center;
+    
+    }
+}
+@media screen and (max-width:530px) {
+    .aboutrowContainers{
+        flex-direction: column !important;
+    }
+    .displayer{
+        display: none;
+    }
+    .positioning{
+        display: block !important;
+        margin-top: 150px;
+    }
+    
+}
+@media (max-width: 768px) {
+    .about-item {
+        max-width: 90%;
+    }
 }

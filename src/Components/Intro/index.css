@@ -13,26 +13,41 @@
     margin: 15px;
     padding: 50px;
 }
+.serviceImage{
+    height:100%;
+    width:100%;
+    
 
+}
 .heading3{
     width: 100%;
     margin: 10px;
+   
 }
-.categoryButtons{
+.heading1{
+    text-align: center;
+    width: 100%;
+
+}
+.categoryButtons{ 
     width: 100px;
     height: 60px;
     margin: 30px;
     border-radius: 10px;
     border: 1px solid #ccc;
+    transition: scale 0.3s ease-in-out;
+    
 }
 .categoryButtons:hover{
     scale: 1.25;
+    transition: scale 0.3s ease-in-out;
 
 }
 .categoryBlog{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
     width: 50%;
     height: auto;
@@ -93,10 +108,11 @@
 }
 .titleImg{
     width: 45%;
-    height: auto;
+    height: auto; 
     margin: 10px;
     border-radius: 15px;
 }
+
 .trigger-button {
     font-size: 16px;
     font-weight: 400;
@@ -110,8 +126,9 @@
     outline: none;
    }
 .popuContainer{
-    height: 80vh;
-    width: 50vw;
+    height: 65vh;
+    width: auto;
+    padding: 15px;
     overflow-y: auto;
     border-radius: 15px;
     display: flex;
@@ -119,7 +136,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    z-index: 10000;
+    zoom: 0.8;
+    
 }
 .categoryTitle{
     font-size: 13px;
@@ -127,7 +145,7 @@
 .subLayerItems{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     width: 250px;
     height: 80px;
@@ -135,6 +153,11 @@
     padding: 15px;
     border-radius: 15px;
     background-color: rgb(237, 237, 237);
+    transition: scale 0.3s ease-in-out;
+}
+.subLayerItems:hover{
+    scale: 1.15;
+    transition: scale 0.3s ease-in-out;
 }
 .subImage{
     height: auto;
@@ -148,13 +171,14 @@
     display: flex;
     flex-direction: row;
 }
-@media screen and (max-width:426px){
+@media screen and (max-width:724px){
     .titleImg{
         display:none;
     }
     .categoryBlog{
         display: flex;
         flex-direction: column;
+        
         align-items: center;
         justify-content: space-between;
         width: 90%;
@@ -178,8 +202,6 @@
         padding-bottom: 40px;
     }
 
-}
-@media screen and (max-width:426px){
     .ratingContainer{
         display: flex;
         flex-direction: row;
@@ -187,7 +209,7 @@
         justify-content: space-around;
     }
 }
-@media screen and (max-width:768px) and (min-width:426px){
+@media screen and (max-width:768px) and (min-width:725px){
     .titleImg{
         display:none;
     }
@@ -215,4 +237,54 @@
         padding: 50px;
     }
 
+}
+@media screen and (max-width : 559px){
+    .categoryContainer{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: none;
+        border-radius: 15px;
+        background-color: #fff;
+        justify-content: center;
+        margin: 0px;
+        padding: 0%;
+        padding-bottom: 20px;
+    }
+    .categoryButtons{ 
+        width: 100px;
+        height: 60px;
+        margin: 10px;
+        margin-top: 25px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        scale: 0.8;
+        transition: scale 0.3s ease-in-out;   
+    }
+    .categoryBlog{
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    .popuContainer{
+        height: 45vh;
+        width: 100%;
+        padding: 15px; 
+        overflow-y: auto;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        zoom: 0.8;   
+    }
+    .subLayerItems{
+        width: 180px;
+        scale: 0.8;
+        margin: 0px;
+    }
 }
