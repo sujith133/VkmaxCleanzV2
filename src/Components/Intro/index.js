@@ -13,6 +13,7 @@ import { useState } from 'react';
 const Intro =()=>{ 
     
     const categoryList=[
+        {categoryName:"AMC",title:"AMC",imageUrl:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/amc.png"},
         {categoryName:"CLEANING",title:"House Keeping",imageUrl:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/cleaning.png"},
         {categoryName:"AC",title:"AC Repairs and Services",imageUrl:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/ac.png"},
         {categoryName:"Salon",title:"Car Wash",imageUrl:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/car.png"},        
@@ -20,9 +21,11 @@ const Intro =()=>{
         {categoryName:"home",title:"Home Painting",imageUrl:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/painting.png"},
         {categoryName:"PEST CONTROL",title:"Pest Control",imageUrl:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/pest.png"},
         {categoryName:"INTERIOR DESIGN",title:"Interior Designing",imageUrl:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/c2.png"},
+        
         {categoryName:"SOFA CLEANING",title:"Sofa Cleaning",imageUrl:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/sofa.png"}
         ]
     const subCategoryList=[
+        {name:"Pest Control", image:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/pest.png",category:"AMC"},
         {name:"Basic Wash", image:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/formCar.png",category:"Salon"},
         {name:"Foam Wash", image:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/formCar.png",category:"Salon"},
         {name:"Polishing", image:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/formCar.png",category:"Salon"},
@@ -45,7 +48,11 @@ const Intro =()=>{
         {name:"Furniture Assembly", image:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/e4.png",category:"ELECTRICAL"},
         {name:"Home Painting", image:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/painting.png",category:"home"},
         {name:"Interior Designing", image:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/c2.png",category:"INTERIOR DESIGN"},
-        {name:"Pest Control", image:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/pest.png",category:"PEST CONTROL"}
+        {name:"Rats Pest Control", image:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/pest.png",category:"PEST CONTROL"},
+        {name:"Flies Pest Control", image:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/pest.png",category:"PEST CONTROL"},
+        {name:"Cockroaches Pest Control", image:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/pest.png",category:"PEST CONTROL"},
+        {name:"WoodWorms Pest Control", image:"https://raw.githubusercontent.com/sujith133/maxCleanz/main/cottons/pest.png",category:"PEST CONTROL"}
+
         
         ] 
         const [filteredCategory,setFilteredCategory]=useState([])

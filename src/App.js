@@ -8,6 +8,7 @@ import Contact from './Components/Contact/index';
 import Footer from './Components/Footer/Index';
 import SubServiceDetails from './Components/SubServiceDetails/index';
 import SubService from './Components/SubService/index';
+import WhatsAppIcon from './Components/whatsappIcon';
 import { Routes,Route } from 'react-router-dom';
 
 
@@ -31,7 +32,7 @@ function App() {
 </Routes>
 
       
-
+<WhatsAppIcon />
       <Footer />
       
     </div>

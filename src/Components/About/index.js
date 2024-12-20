@@ -69,8 +69,8 @@ const About = () => {
                 <div className="aboutRowContainer founderContainer">
                 <p className="about-description imageBlog padder">At VK Max Cleanz, our visionary Leadership Team spearheads the charge in steering marketing initiatives and propelling product expansion. Beyond the realm of marketing, they pioneer technological advancements and drive product innovation to new heights. Moreover, their adept management extends to seamless operations and the strategic onboarding of service providers, ensuring unparalleled excellence in every facet of our operations.</p>
                 <div className="rowContainer  imageBlog aboutrowContainers">
-                <div><img src="https://raw.githubusercontent.com/sujith133/maxCleanz/main/IMG_8101.JPG" alt="ceo" className="founderImage" /><p><strong>Enoch</strong></p><p>CEO | VK Max Cleanz</p></div>
-                <div><img src="https://raw.githubusercontent.com/sujith133/maxCleanz/main/IMG_8103.JPG" alt="director" className="founderImage" /><p><strong>Rama Lakshmi</strong></p><p>Director | VK Max Cleanz</p></div>
+                <div><img src="https://raw.githubusercontent.com/sujith133/maxCleanz/main/IMG_8101.JPG" alt="ceo" className="founderImage" /><p className="textcenter"><strong>Enoch</strong></p><p className="textcenter">CEO | VK Max Cleanz</p></div>
+                <div><img src="https://raw.githubusercontent.com/sujith133/maxCleanz/main/IMG_8103.JPG" alt="director" className="founderImage" /><p className="textcenter"><strong>Moses Rachelle</strong></p><p className="textcenter">Director | VK Max Cleanz</p></div>
                 </div>
                 </div>
 
